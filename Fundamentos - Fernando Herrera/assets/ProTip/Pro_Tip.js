@@ -46,7 +46,7 @@ const[Color1,Color2,Color3]=colores
 
 const Jose={
     Nombre:"Jose",
-    Apellido:"DIaz",
+    Apellido:"Diaz",
     Edad:20,
     Estudiante:true,
     Gustos:["MTB","PC","TECNOLOGIA"],

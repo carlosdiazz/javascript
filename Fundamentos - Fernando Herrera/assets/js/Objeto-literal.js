@@ -14,26 +14,26 @@ const personaje = {
 //Aqui agregoi nueva clave 
 personaje.Casado = false;
 
-console.log(personaje);
+//console.log(personaje);
 
-console.log("Nombre: " + personaje.Nombre);
+//console.log("Nombre: " + personaje.Nombre);
 
-console.log("Nombre: " + personaje["Nombre"]);
+//console.log("Nombre: " + personaje["Nombre"]);
 
-console.log("Madre: " + personaje.Padres.Madre + " Padre: " + personaje.Padres.Padre);
+//console.log("Madre: " + personaje.Padres.Madre + " Padre: " + personaje.Padres.Padre);
 
-console.log("Gustos: " + personaje.Gustos.length);
+//console.log("Gustos: " + personaje.Gustos.length);
 
-console.log("Gusto Favorito: " + personaje.Gustos[0]);
+//console.log("Gusto Favorito: " + personaje.Gustos[0]);
 
-console.log(`Nombre: ${personaje.Nombre} Edad: ${personaje.Edad} Ciudad: ${personaje.Ciudad}`)
+//console.log(`Nombre: ${personaje.Nombre} Edad: ${personaje.Edad} Ciudad: ${personaje.Ciudad}`)
 
 //Asi puedo borrar una clave de un Obejcto
 delete personaje.Edad
 
 //Asi puedo convertir un objecto en una Lista
 const lista_Personaje = Object.entries(personaje)
-console.log(lista_Personaje);
+//console.log(lista_Personaje);
 
 //personaje.Dinero=9999;
 
@@ -50,9 +50,22 @@ const propiedades = Object.getOwnPropertyNames(personaje);
 //Con este metodo obtenemos solos los valores d eun objecto o diccioanrio
 const valores = Object.values(personaje);
 
-console.log({propiedades, valores})
-
-
-
+//console.log({propiedades, valores})
 
 //console.log(personaje);
+
+
+let perro = {
+    raza:"Chihuhua",
+    color:"Azul",
+    tamano:5
+}
+
+//Al usar {...NOMBRE DEL OBJECTO}, puedo usar esa misma clase o objecto y cambairle los valores
+rubi= perro
+osito ={...perro}
+
+osito.raza="Dalmata"
+
+console.log(rubi)
+console.log(osito)

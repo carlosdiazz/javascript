@@ -9,11 +9,11 @@ let juegos =["Juego 1",
             console.log(juegos[0][0])
 
 //Saber cuantos elementos hay en un arreglo
-console.log(juegos.length)
+//console.log(juegos.length)
 
 //recorrer un elemento
 juegos.forEach((elemento,indice,arr)=>{
-    console.log({elemento,indice,arr})
+    //console.log({elemento,indice,arr})
 });
 
 //Anadir un elemento al final
@@ -32,10 +32,28 @@ let JuegosBorrados = juegos.splice(0,2)
 //Saber posicon de un objecto
 let DondeEstaElJuego=juegos.indexOf("Juego 5")
 
-console.log(DondeEstaElJuego)
+//console.log(DondeEstaElJuego)
 
 
-console.log(JuegosBorrados)
+//console.log(JuegosBorrados)
 
-console.log(ultimo)
-console.log("ok "+juegos)
+//console.log(ultimo)
+//console.log("ok "+juegos)
+
+//Ejemplos de Lista
+
+const frutas = ["Manzana","Pera","limon"]
+
+//Si quiero crear un nuevo arreglo en memoria con un arreglo existente lo hago de la siguiente manera
+const otraFrutas = [...frutas];
+
+//Con ese metodo tambien puedo crear otro arreglo en memoria
+const otraFrutas2 = frutas.slice();
+
+
+
+//Aqui agrego un elemneto a la lista
+otraFrutas.push("Pina")
+otraFrutas2.push("Aguacate","Melon")
+
+console.table({frutas,otraFrutas,otraFrutas2})

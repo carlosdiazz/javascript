@@ -39,6 +39,12 @@ const aleatorio2=()=>Math.random(0,10);
 //saludar_flecha("Carlos")
 //saludar_flecha2("Jose")
 
+//console.log(aleatorio2())
 
+//Al poner 3 puntos me crea un arreglo [] con los diferentes datos que ingrese
+const ImprimirNombres = (cantidad,...nombres) => {
+    console.log(cantidad)
+    console.log(nombres)
+}
 
-console.log(aleatorio2())
+ImprimirNombres(4,"Carlos","Maria")
