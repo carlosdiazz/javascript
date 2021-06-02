@@ -43,4 +43,4 @@ const dias = {
     5:"Viernes",
     6:"Sabado"
 }
-console.log(`Hoy es: ${dias[55] || " "} del ano ${ano} `);
+console.log(`Hoy es: ${dias[5] || " "} del ano ${ano} `);

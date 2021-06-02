@@ -15,3 +15,10 @@ console.log( !false);
 //Operador AND.. Toda la consiciones deben de ser verdaderas para que sea verdadero
 console.log( true && false)
 console.log( true && true)
+
+console.log("----------")
+//Operador OR.. con solo un True ya es verdadero
+console.log( true || false)
+console.log( true || true)
+console.log( false || false)
+
