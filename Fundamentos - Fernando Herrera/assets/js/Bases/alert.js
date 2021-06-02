@@ -1,4 +1,4 @@
-//alert("Holaa, Bienvbenido");
+        //alert("Holaa, Bienvbenido");
 
 //Aqui me devuelve lo que se esciba aqui, y el 2do parametero es por defecto
 //const nombre2= prompt("Cual es tu nombre", "Nombre");

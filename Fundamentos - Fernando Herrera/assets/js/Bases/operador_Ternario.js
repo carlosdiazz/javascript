@@ -61,3 +61,12 @@ console.log(Estamos_open2(hoy,hora))
 const fin_de_semana = ([0,6].includes(0)) ? "Es fin de semana " : "No es fin de semana";
 
 console.log(fin_de_semana)
+
+const Estamos_open4 =(findesemana,hora)=>{
+    if (([0,6].includes(findesemana) === true && hora >=9) || ([0,6].includes(findesemana) === false && hora >=11 )){
+    return (`Estamos abiertossss hoy es :${dias[findesemana]} y son las :${hora}`)
+}else{
+    return("Estamos cerradoooo ")
+}}
+
+console.log(Estamos_open4(6,9))
