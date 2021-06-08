@@ -26,7 +26,7 @@ const  crearDeack = () => {
     }
     //Con esta funcion estoy desordenando una lista
     deck = _.shuffle ( deck );
-    console.log(deck)
+    //console.log(deck)
     return deck
 }
 
@@ -48,6 +48,7 @@ const valorCarta = (carta) => {
     //Aqui tomo el primer valor del string, En el caso del 10 tomo el 1 y el 0 formando 10
     const valor = carta.substring(0,carta.length-1);
     
+    //Si no es una letra me va a a devolver el valor * 1 para convertir el striong e numero, si es una letra y es A me duevuelve 11 en caso contrario me devuelve 10
     //Aqui evaluo si es una letra, y si es una letra y es a retorna 11 en caso contraio retorna 10, pero si desde el comeinzo es un numero me va a retornar le numero
     return (isNaN(valor))   ?
             ( valor === "A")? 11 : 10
