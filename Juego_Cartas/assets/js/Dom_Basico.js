@@ -34,4 +34,5 @@ divBotones.append(BotonNuevo)
 BotonNuevo.innerText="Boton Nuevo"
 
 //Aqui agrego una clase al boton o a la variable
-BotonNuevo.classList.add('btn ')
+BotonNuevo.classList.add('btn')
+BotonNuevo.classList.add('btn-succes')
